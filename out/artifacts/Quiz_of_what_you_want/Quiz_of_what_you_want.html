@@ -1,0 +1,43 @@
+<html><head>
+  <SCRIPT src="http://java.com/js/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'Quiz_of_what_you_want.jnlp'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedQuiz_of_what_you_want_id() {
+        dtjava.embed(
+            {
+                id : 'Quiz_of_what_you_want_id',
+                url : 'Quiz_of_what_you_want.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '600',
+                height : '400'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedQuiz_of_what_you_want_id);
+</script>
+
+</head><body>
+<h2>Test page for <b>Quiz of what you want</b></h2>
+  <b>Webstart:</b> <a href='Quiz_of_what_you_want.jnlp' onclick="return launchApplication('Quiz_of_what_you_want.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>

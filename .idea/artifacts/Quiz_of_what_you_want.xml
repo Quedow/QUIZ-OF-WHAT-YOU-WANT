@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="Quiz of what you want">
+    <output-path>$PROJECT_DIR$/out/artifacts/Quiz_of_what_you_want</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="com.company.MVP" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="" />
+        <option name="vendor" value="" />
+        <option name="version" value="" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="Quiz_of_what_you_want.jar">
+        <element id="module-output" name="Quiz of what you want" />
+      </element>
+    </root>
+  </artifact>
+</component>
